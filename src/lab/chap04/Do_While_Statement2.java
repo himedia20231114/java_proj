@@ -69,7 +69,7 @@ public class Do_While_Statement2 {
 				System.out.println("10개의 정수를 공백으로 넣으세요>>>> ");
 				int c , count = 0 ; 		// c : 스캐너로 정수를 받는 변수, count : 짝수를 카운트 하는 변수 
 				for ( int i = 1 ; i <= 10 ; i++) {
-					c = sc.nextInt(); 				// 10 번 루프 : input 값을 하당 받음 
+					c = sc.nextInt(); 				// 10 번 루프 : input 값을 받음 
 					
 					if ( c <= 0) {    // 0 이거나 음수는 카운트 하지 않음. 
 						continue; 
