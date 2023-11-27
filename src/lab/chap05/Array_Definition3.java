@@ -105,7 +105,7 @@ public class Array_Definition3 {
 				int a = 1 ; 
 				for ( int i = 0 ; i < arr.length ; a++  ) {     // i : 방번호 는 값이 들어갔을때만 방번호가 늘어야 한다. 
 				
-					if ( a % 3 == 0 ) {   // a의 값이 3의 배수  <<  3, 6배수 
+					if ( a % 3 == 0 ) {   // a의 값이 3의 배수  <<==  3, 6배수 
 						if (a % 6 != 0 ) {   // 6의 배수가 아닐때 true 
 							// 3의 배수이면서 6의 배수가 아닌것이 실행 
 							arr [i] = a ;      // 
