@@ -1,4 +1,4 @@
-package chap06;
+package chap06.ex01;
 //클래스 밖에 : 패키지, 임포트, 외부 클래스 
 
 
@@ -19,6 +19,7 @@ public class Object_Definition {
 	
 	// 생성자 : 인풋 값이 존재하는 생성자 
 	Object_Definition(String name, int age, double weight, String add) {
+		// this : 자신 객체의 필드,  인풋 변수이름 = 받는 변수이름 = 필드이름이 동일 할 경우 this.   
 		this.name = name; 
 		this.age = age; 
 		this.weight = weight; 
@@ -37,6 +38,11 @@ public class Object_Definition {
 	// 메소드(호출시 작동됨) : 
 	int printAge () {
 		return age; 
+	}
+	
+	void printAll() {
+		System.out.println("이름 : " + name + " , 나이 : " + age  );
+		System.out.println("몸무게 :" + weight + ", 주소 : " + add);
 	}
 	
 	
@@ -66,11 +72,11 @@ public class Object_Definition {
 		
 		
 		//1. 객체 생성 : 클래스  ====> RAM (객체)
-			// 클래스명 객체명 = new 클래스명(); 
-	
+			// 클래스명 객체명 = new 클래스명(); 	// 기본 생성자 호출 
+			// 타입  변수명   = new 생성자호출; 
 		Object_Definition hong = new Object_Definition(); 
 		
-		//2. 객체의 필드의 값등록 
+		//2. 객체의 필드의 값 등록 
 		hong.name = "홍길동"; 
 		hong.age = 30; 
 		hong.weight = 77.5; 
@@ -80,6 +86,46 @@ public class Object_Definition {
 		hong.printName();
 		
 		System.out.println(hong.printAge()); 
+		
+		hong.printAll();
+		
+		System.out.println("==========");
+		
+		//1. 객체 생성 : 생성자에 매개변수의 값을 넣어서 객체 생성 
+		Object_Definition lee = new Object_Definition("이순신", 40, 88.8, "부신");
+		
+		//2. 메소드 호출 
+		lee.printAll();
+		
+		System.out.println("==================");
+
+		//1. 객체 생성  : 클래스 (설계도, 붕어빵틀) ===> 객체 (건물, 붕어빵)
+		
+		Object_Definition park = new Object_Definition("박문수", 60, 66.7, "대전"); 
+		
+		
+		//2. 객체의 메소드 호출 
+		park.printAll(); 
+		System.out.println("================");
+		
+		System.out.println(park.name);   //박문수 
+		System.out.println(park.age);    // 60 
+		
+		System.out.println("============================");
+		System.out.println(hong.name);	//홍길동 
+		System.out.println(hong.age);   //30 
+		
+		System.out.println("============================");
+		System.out.println(lee.name);	//이순신
+		System.out.println(lee.age);	// 40 
+		
+		System.out.println("=======필드의 값을 수정======");
+		lee.name = "이길동"; 
+		lee.age = 77; 
+		
+		System.out.println("============================");
+		System.out.println(lee.name);	//이길동
+		System.out.println(lee.age);	// 77
 		
 
 	}
