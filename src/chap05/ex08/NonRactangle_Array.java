@@ -3,7 +3,6 @@ package chap05.ex08;
 import java.util.Arrays;
 
 public class NonRactangle_Array {
-
 	public static void main(String[] args) {
 		//2차원 배열 : 비정방형 배열 : 행에 대해서 열의 갯수가 다른 배열 
 		

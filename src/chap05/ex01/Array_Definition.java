@@ -4,7 +4,7 @@ public class Array_Definition {
 	public static void main(String[] args) {
 		/*
 		 	자료형 : 변수, 상수 , 배열(Array) 을 정의 할때 자료형이 정의 되어야 함
-		 	  - 기본 자료형 : Stack 공간 변수명, 값 ,  값 비교    == , stak 의 값을 비교
+		 	  - 기본 자료형 : Stack 공간 변수명, 값 ,  값 비교    == , stack 의 값을 비교
 		 	  		boolean, 정수 ( byte, short, int, long ), 실수 (float, double), 문자 (char)
 		 	  		- Stack은 초기값이 할당되지 않더라도 괜찮음. 
 		 	  		    - 초기값없이 사용하면 오류
