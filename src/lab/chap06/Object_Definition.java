@@ -1,7 +1,6 @@
 package lab.chap06;
 
-class Animal {
-	
+class Animal {	
 	//1. 필드 
 	String aName; 
 	String aColor; 
@@ -16,7 +15,6 @@ class Animal {
 	//메소드 : int abc() {  retrun aLeg + aSpeed ;     } 
 	
 }
-
 public class Object_Definition {
 	public static void main(String[] args) {
 		// 객체 생성 및 테스트 

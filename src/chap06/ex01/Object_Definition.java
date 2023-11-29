@@ -56,6 +56,7 @@ public class Object_Definition {
 		 		- 람보르 기니, 페라리   <=== 고장 나면 그 회사에서만 수리, 수리비가 많이 나온다.
 		 		- 한 회사에서 부품의 모든것을 그 차에 맞게 최적화 만듬.  
 		 	객체 지향 프로그래밍 ( OOP ) : 객체 , 객체 프로그래밍 , Java, C++,
+		 		- 캡슐화 (보안), 상속(중복을 방지), 다형성-여러형태로 찍어낼수 있다.  
 		 		- 유지보수 하기가 쉽다. 
 		 		- 개발 하기 쉽다. 
 		 		- 코드가 굉장히 간결 
@@ -92,7 +93,7 @@ public class Object_Definition {
 		System.out.println("==========");
 		
 		//1. 객체 생성 : 생성자에 매개변수의 값을 넣어서 객체 생성 
-		Object_Definition lee = new Object_Definition("이순신", 40, 88.8, "부신");
+		Object_Definition lee = new Object_Definition("이순신", 40, 88.8, "부산");
 		
 		//2. 메소드 호출 
 		lee.printAll();
