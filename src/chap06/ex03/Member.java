@@ -102,11 +102,24 @@ public class Member {	//회원 정보를 담은 클래스
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}
-	
-	
 
-    
-    
+
+
+
+	
+	
+	// toString() 메소드 Overriding : 
+		//모든 자바의 클래스는 Object 클래스를 상속 받는다. Object클래스의 필드와 메소드를 사용할 수 있다. 
+		// Overriding : 부모 클래스의 메소드를 자식클래스에서 재정의 해서 사용 하는 것 
+		// Overloading : 메소드 이름은 동일하고, 인풋 매개변수에 갯수나 타입에 따라서 식별 
+
+	// toString() : Object 클래스의 메소드 , 객체 자체를 출력시 , 그 객체의 필드의 값을 출력 
+
+	@Override
+	public String toString() {
+		return "Member [idx=" + idx + ", id=" + id + ", pw=" + pw + ", name=" + name + ", year=" + year + ", month="
+				+ month + ", day=" + day + ", phone=" + phone + ", addr=" + addr + "]";
+	}
 	
 
 	
