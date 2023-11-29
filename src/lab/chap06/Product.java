@@ -9,11 +9,55 @@ public class Product {
 	private String proColor; // 제품 색깔 
 	
 	// 기본 생성자 
-	Product () {} 
-	
-	//getter / setter 생성 
-	
+	Product () {}
+
+	//getter / setter 생성
+	public long getIdx() {
+		return idx;
+	}
+
+	public void setIdx(long idx) {
+		this.idx = idx;
+	}
+
+	public String getProName() {
+		return proName;
+	}
+
+	public void setProName(String proName) {
+		this.proName = proName;
+	}
+
+	public int getQty() {
+		return qty;
+	}
+
+	public void setQty(int qty) {
+		this.qty = qty;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public String getProColor() {
+		return proColor;
+	}
+
+	public void setProColor(String proColor) {
+		this.proColor = proColor;
+	}
+
 	// toString () 메소드 오버라이딩 : 객체 자체를 출력시 필드의 값을 출력 
+	@Override
+	public String toString() {
+		return "Product [idx=" + idx + ", proName=" + proName + ", qty=" + qty + ", year=" + year + ", proColor="
+				+ proColor + "]";
+	} 
 	
 	
 
