@@ -46,6 +46,19 @@ public class Method {
 		}	
 	}
 	
+	// List<Student> 객체를 받아서 객체를 끄집어내서 메소드 호출 hapAvg() 
+	void all(List<Student> aList) {
+		for (int i = 0 ; i < aList.size(); i++) {
+			Student s = aList.get(i); 
+			s.hapAvg();
+		}
+	}
+	
+	void sMethod (Student s) {
+		s.hapAvg();
+	}
+	
+	
 	
 
 }

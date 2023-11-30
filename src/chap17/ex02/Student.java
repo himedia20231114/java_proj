@@ -20,6 +20,10 @@ public class Student {
 	Student (String name, String addr , int num ){
 		this.name = name ; this.addr=addr ; this.num = num ; 
 	}
+	Student (String name, int kor, int eng, int math) {
+		this.name = name; this.kor = kor; this.eng = eng; this.math = math; 
+	}
+	
 	// 생성자 오버로딩 
 	// 메소드 오버로딩 (Overloading) : 메소드 이름이 동일, 시그니쳐에 따라서 해당 메소드 호출 
 			// 식별자 (시그니쳐) : 인풋 갯수, 인풋 자료형 
@@ -27,7 +31,17 @@ public class Student {
 		// 상속 : 중복 된 코드를 방지
 		// 다형성 : 하나의 메소드 여러 형대로 출력 
 	
-	// 3. 메소드 : 기능 , 입력 ===> 출력 <== 
+	// 3. 메소드 : 기능 , 입력 ===> 출력 <==
+	
+	//메소드 : kor , eng, math 점수를 합계와 평균을 구해서 출력 메소드 
+	public void hapAvg() {
+		int hap = 0; 
+		hap = kor + eng + math; 
+		double avg = hap / 3.0 ; 
+		
+		System.out.println( name + " 님의 점수의 합계는 " + hap + " 이고, 평균은 : " + avg);
+	}
+	
 	
 	public String getName() {
 		return name;
