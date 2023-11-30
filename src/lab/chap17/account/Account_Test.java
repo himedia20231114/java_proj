@@ -61,6 +61,7 @@ public class Account_Test {
 					break; 
 				}
 				// 출금 
+				System.out.println("2. 출금을 선택했습니다. 출금액을 입력하세요>>>>  ");
 				money = sc.nextInt(); 
 				a.withdraw(money);
 				break;				
