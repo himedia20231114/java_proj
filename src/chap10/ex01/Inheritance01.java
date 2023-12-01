@@ -6,7 +6,7 @@ public class Inheritance01 {
 		/*
 		 	상속 (Inheritance) : OOP 의 특징 
 		 		- 자바는 하나 부모 클래스만 상속 할 수 있다. 다중 상속을 지원하지 않는다. 
-		 		- 중복된 방지 할 수 있다. 
+		 		- 중복된 코드를 방지 할 수 있다. 
 		 		- OOP 의 꽃 
 		 		- 부모 클래스의 필드, 메소드, 이너클래스가 그대로 자식 클래스에게 상속된다. 
 		 				<== 생성자는 상속되지 않는다. 
@@ -189,8 +189,7 @@ public class Inheritance01 {
 		cc100.age = 90; 
 		
 		System.out.println(cc100.age);
-		
-		
+			
 	}
 
 }
