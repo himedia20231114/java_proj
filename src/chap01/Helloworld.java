@@ -12,7 +12,6 @@ public class Helloworld {	// 클래스 블락
 		
 		System.out.println("Hello World ");
 		//객체명 (클래스명).메소드 
-		//
 		
 
 	}
