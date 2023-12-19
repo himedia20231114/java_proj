@@ -23,6 +23,7 @@ public class MovieMgr {
 
 		index = 0; 
 		for (int i = 0 ; i < movies.size() ; i++) {
+			
 			System.out.println(++index + ". " + movies.get(i));
 		}
 		

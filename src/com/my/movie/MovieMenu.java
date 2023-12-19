@@ -78,7 +78,7 @@ public class MovieMenu {
 				break;
 			case 0:
 				flag=false;
-				break;
+				break ;
 			}			
 		}
 		
